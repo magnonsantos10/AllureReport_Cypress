@@ -45,7 +45,7 @@ import '@shelex/cypress-allure-plugin'
 ```
 "scripts": {
     "gui": "npx cypress open",
-    "cy:run:folder": "cypress run --spec \"cypress/integration/gui/**/login.spec.js\" --env allure=true -- reporter mocha-allure-reporter",
+    "cy:run:folder": "cypress run --spec \"cypress/integration/**/*.spec.js\" --env allure=true -- reporter mocha-allure-reporter",
     "posttest": "allure generate allure results --clean -o allure-report || true",
     "test": "npm run cy:run:folder"
   },
