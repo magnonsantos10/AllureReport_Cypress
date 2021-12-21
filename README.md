@@ -3,10 +3,16 @@ Configuração do Allure Report com Cypress
 
 ## Instalação
 
-* instalando mocha e commandline
+* instalando mocha-aalure-reporter
 
 ```
-npm i --save-dev mocha-allure-reporter allure commandline
+npm i --save-dev mocha-allure-reporter
+```
+
+* Instalando allure-commandline
+
+```
+npm install -g allure-commandline --save-dev
 ```
 
 * instalando @shelex plugin
